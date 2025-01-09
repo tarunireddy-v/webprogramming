@@ -110,6 +110,13 @@
             background-color: #7f9a92;
             color: white;
         }
+        video {
+            display: block;
+            margin: 20px auto;
+            max-width: 100%;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+        }
 
         footer {
             background-color: #7f9a92;
@@ -220,12 +227,20 @@
             </div>
 
             <div class="blog-item">
-                <h3>Web Hosting Tutorial</h3>
-                <p>Watch my tutorial video on how to host your web development projects online.</p>
-                <div class="activity-box">
-                    <a href="https://www.youtube.com/watch?v=yourvideoid" target="_blank">Watch the Tutorial</a>
-                </div>
-            </div>
+    <h3>Web Hosting Tutorial</h3>
+    <p>Watch my tutorial video on how to host your web development projects online.</p>
+    <div class="activity-box">
+        <a href="https://www.youtube.com/watch?v=yourvideoid" target="_blank">Watch the Tutorial</a>
+    </div>
+    <!-- Adding the video -->
+    <div>
+        <video width="320" height="240" controls>
+            <source src="media/WEBHOSTING.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+</div>
+
         </div>
     </div>
 
