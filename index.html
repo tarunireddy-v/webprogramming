@@ -78,10 +78,11 @@
             box-shadow: 0px 6px 16px rgba(0, 0, 0, 0.1);
         }
 
-        .blog-item img {
+        .blog-item img, .blog-item video {
             width: 100%;
             height: 200px;
             object-fit: cover;
+            border-radius: 5px;
         }
 
         .activity-box {
@@ -207,24 +208,15 @@
                     <a href="assignment1web/activity7.html">Activity 7 - Block/Inline</a>
                 </div>
             </div>
-        </div>
 
-        <!-- GitHub & Web Hosting Section -->
-        <div class="blog-section" id="github">
+            <!-- Video Section -->
             <div class="blog-item">
-                <h3>GitHub Repository</h3>
-                <p>Explore my projects on GitHub. Feel free to contribute or fork the repositories.</p>
-                <div class="activity-box">
-                    <a href="https://github.com/tarunireddy-v/webprogramming.git" target="_blank">My GitHub</a>
-                </div>
-            </div>
-
-            <div class="blog-item">
-                <h3>Web Hosting Tutorial</h3>
-                <p>Watch my tutorial video on how to host your web development projects online.</p>
-                <div class="activity-box">
-                    <a href="https://www.youtube.com/watch?v=yourvideoid" target="_blank">Watch the Tutorial</a>
-                </div>
+                <video controls>
+                    <source src="path-to-your-video.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <h3>Web Development Overview</h3>
+                <p>A brief video overview of my learning journey in web development.</p>
             </div>
         </div>
     </div>
