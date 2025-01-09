@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            background-color: #f5f5f5;
+        }
+
+        form {
+            background: white;
+            padding: 30px;
+            border-radius: 4px;
+            width: 350px;
+            border: 2px solid #0984e3;
+        }
+
+        h2 {
+            margin: 0;
+            color: #333;
+        }
+
+        label {
+            color: #666;
+            display: block;
+            margin-bottom: 8px;
+            font-size: 14px;
+        }
+
+        input[type="email"],
+        input[type="password"] {
+            width: 100%;
+            padding: 12px;
+            margin: 8px 0;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            box-sizing: border-box;
+            background-color: #f8f9fa;
+        }
+
+        input[type="submit"] {
+            width: 100%;
+            padding: 12px;
+            background-color: #0984e3;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        .checkbox-group {
+            margin: 15px 0;
+        }
+
+        .checkbox-group label {
+            display: inline;
+            color: #666;
+            font-size: 14px;
+        }
+
+        .links {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        a {
+            color: #0984e3;
+            text-decoration: none;
+        }
+
+        p {
+            color: #666;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <form action="dashboard.html" method="POST">
+        <h2>Login</h2>
+        
+        <div>
+            <label>Email:</label>
+            <input type="email" name="email" placeholder="Enter email" required>
+        </div>
+
+        <div>
+            <label>Password:</label>
+            <input type="password" name="password" placeholder="Enter password" required>
+        </div>
+
+        <div class="checkbox-group">
+            <input type="checkbox" id="show-password" name="show-password">
+            <label for="show-password">Show Password</label>
+        </div>
+
+        <input type="submit" value="SIGN IN">
+
+        <div class="links">
+            <a href="#">Forgot Username / Password?</a>
+            <p>Don't have an account? <a href="signup1.html">Sign up</a></p>
+        </div>
+    </form>
+</body>
+</html>

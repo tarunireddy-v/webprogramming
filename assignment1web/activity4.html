@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Elements Comparison</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font: 16px/1.6 Arial, sans-serif;
+            padding: 20px;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        h1, h2, h3 {
+            margin-bottom: 10px;
+            color: #2a3b8f;
+        }
+        .comparison {
+            margin-bottom: 30px;
+            padding: 20px;
+            background: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        th {
+            background-color: #f2f2f2;
+            padding: 10px;
+            text-align: left;
+            border: 1px solid #ddd;
+        }
+        td {
+            padding: 15px;
+            border: 1px solid #ddd;
+            vertical-align: top;
+        }
+        .elements {
+            margin-top: 20px;
+        }
+        .elements b {
+            color: #2a3b8f;
+            display: block;
+            margin-top: 15px;
+        }
+        .elements ul {
+            margin: 10px 0;
+            padding-left: 20px;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>HTML Elements Comparison</h1>
+
+    <!-- 1. Div and Span -->
+    <div class="comparison">
+        <h2>1. Div and Span</h2>
+        <table>
+            <tr>
+                <th>Screenshot code</th>
+                <th>Screenshot output</th>
+            </tr>
+            <tr>
+                <td><img src="./divandspan.png" alt="div and span"></td>
+                <td><img src="./divandspanop.png" alt="div and span"></td>
+            </tr>
+        </table>
+        <div class="elements">
+            <b>Similarities:</b>
+            <ul>
+                <li>Generic containers, CSS-styleable, no semantic meaning</li>
+            </ul>
+            <b>Differences:</b>
+            <ul>
+                <li>Div: block-level, creates new lines, contains any elements</li>
+                <li>Span: inline, flows within text, typically for text portions</li>
+            </ul>
+            <b>Inference:</b> Div for layout sections, span for inline text styling
+        </div>
+    </div>
+
+    <!-- 2. Div and Section -->
+    <div class="comparison">
+        <h2>2. Div and Section</h2>
+        <table>
+            <tr>
+                <th>Screenshot code</th>
+                <th>Screenshot output</th>
+            </tr>
+            <tr>
+                <td><img src="./divandsection.png" alt="div and section"></td>
+                <td><img src="./divandsectionop.png" alt="div and section"></td>
+            </tr>
+        </table>
+        <div class="elements">
+            <b>Similarities:</b>
+            <ul>
+                <li>Block-level, can contain other elements, CSS-styleable</li>
+            </ul>
+            <b>Differences:</b>
+            <ul>
+                <li>Section: semantic meaning, typically has heading</li>
+                <li>Div: no semantic meaning, general-purpose container</li>
+            </ul>
+            <b>Inference:</b> Use section for thematic content grouping, div for styling/layout
+        </div>
+    </div>
+
+    <!-- 3. Paragraph and Article -->
+    <div class="comparison">
+        <h2>3. Paragraph and Article</h2>
+        <table>
+            <tr>
+                <th>Screenshot code</th>
+                <th>Screenshot output</th>
+            </tr>
+            <tr>
+                <td><img src="./paragraphandarticle.png" alt="paragraph and article"></td>
+                <td><img src="./paragraphandarticleop.png" alt="paragraph and article"></td>
+            </tr>
+        </table>
+        <div class="elements">
+            <b>Similarities:</b>
+            <ul>
+                <li>Block-level, contain text, semantic elements</li>
+            </ul>
+            <b>Differences:</b>
+            <ul>
+                <li>Article: self-contained content, can have multiple elements</li>
+                <li>Paragraph: single text block only</li>
+            </ul>
+            <b>Inference:</b> Article for complete content sections, paragraph for text blocks
+        </div>
+    </div>
+
+    <!-- 4. Navigation and Anchor -->
+    <div class="comparison">
+        <h2>4. Navigation and Anchor</h2>
+        <table>
+            <tr>
+                <th>Screenshot code</th>
+                <th>Screenshot output</th>
+            </tr>
+            <tr>
+                <td><img src="./navandanch.png" alt="navigation and anchor"></td>
+                <td><img src="./navandanchop.png" alt="navigation and anchor"></td>
+            </tr>
+        </table>
+        <div class="elements">
+            <b>Similarities:</b>
+            <ul>
+                <li>Navigation elements, improve accessibility</li>
+            </ul>
+            <b>Differences:</b>
+            <ul>
+                <li>Nav: container for navigation sections</li>
+                <li>Anchor: individual link element</li>
+            </ul>
+            <b>Inference:</b> Nav for navigation sections, anchor for individual links
+        </div>
+    </div>
+
+    <!-- 5. Figure and Image -->
+    <div class="comparison">
+        <h2>5. Figure and Image</h2>
+        <table>
+            <tr>
+                <th>Screenshot code</th>
+                <th>Screenshot output</th>
+            </tr>
+            <tr>
+                <td><img src="./imageandpic.png" alt="figure and image"></td>
+                <td><img src="./imageandpicop.png" alt="figure and image"></td>
+            </tr>
+        </table>
+        <div class="elements">
+            <b>Similarities:</b>
+            <ul>
+                <li>Visual content, support alt text, CSS-styleable</li>
+            </ul>
+            <b>Differences:</b>
+            <ul>
+                <li>Figure: can have caption, provides context</li>
+                <li>Image: standalone visual element</li>
+            </ul>
+            <b>Inference:</b> Figure when caption/context needed, image for standalone visuals
+        </div>
+    </div>
+
+    <!-- 6. Label and Legend -->
+    <div class="comparison">
+        <h2>6. Label and Legend</h2>
+        <table>
+            <tr>
+                <th>Screenshot code</th>
+                <th>Screenshot output</th>
+            </tr>
+            <tr>
+                <td><img src="./labelandlegend.png" alt="label and legend"></td>
+                <td><img src="./labelandlegendop.png" alt="label and legend"></td>
+            </tr>
+        </table>
+        <div class="elements">
+            <b>Similarities:</b>
+            <ul>
+                <li>Form descriptors, improve accessibility</li>
+            </ul>
+            <b>Differences:</b>
+            <ul>
+                <li>Label: for individual form controls</li>
+                <li>Legend: for fieldset groups</li>
+            </ul>
+            <b>Inference:</b> Label for individual inputs, legend for form sections
+        </div>
+    </div>
+
+    <!-- 7. Strong, Bold, Emphasis -->
+    <div class="comparison">
+        <h2>7. Strong, Bold, Emphasis</h2>
+        <table>
+            <tr>
+                <th>Screenshot code</th>
+                <th>Screenshot output</th>
+            </tr>
+            <tr>
+                <td><img src="./strongbold.png" alt="strong, bold, emphasis"></td>
+                <td><img src="./strongboldop.png" alt="strong, bold, emphasis"></td>
+            </tr>
+        </table>
+        <div class="elements">
+            <b>Similarities:</b>
+            <ul>
+                <li>Text styling elements, inline elements</li>
+            </ul>
+            <b>Differences:</b>
+            <ul>
+                <li>Strong: semantic importance</li>
+                <li>Bold: visual styling only</li>
+                <li>Emphasis: semantic stress</li>
+            </ul>
+            <b>Inference:</b> Use strong/em for meaning, b for visual styling only
+        </div>
+    </div>
+
+</body>
+</html>

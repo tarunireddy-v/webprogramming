@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HTML5 Form Elements Demo</title>
+</head>
+<body style="font-family: Arial, sans-serif; background-color: #f4f4f9; margin: 20px;">
+    <form style="background-color: #ffffff; border: 1px solid #cccccc; padding: 20px; border-radius: 5px; width: 400px; margin: auto;">
+        <fieldset style="border: 1px solid #6c63ff; border-radius: 5px; padding: 15px;">
+            <legend style="color: #6c63ff; font-weight: bold;">Personal Information Form</legend>
+
+            <div style="margin-bottom: 15px;">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" style="width: 100%; padding: 5px;">
+            </div>
+
+            <div style="margin-bottom: 15px;">
+                <label>Gender:</label>
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Female</label>
+                <input type="radio" id="other" name="gender" value="other">
+                <label for="other">Other</label>
+            </div>
+
+            <div style="margin-bottom: 15px;">
+                <label>Interests:</label>
+                <input type="checkbox" id="sports" name="interests" value="sports">
+                <label for="sports">Sports</label>
+                <input type="checkbox" id="music" name="interests" value="music">
+                <label for="music">Music</label>
+                <input type="checkbox" id="reading" name="interests" value="reading">
+                <label for="reading">Reading</label>
+            </div>
+
+            <div style="margin-bottom: 15px;">
+                <label for="country">Select Country:</label>
+                <select id="country" name="country" size="3" style="width: 100%; padding: 5px;">
+                    <option value="usa">USA</option>
+                    <option value="uk">UK</option>
+                    <option value="canada">Canada</option>
+                    <option value="australia">Australia</option>
+                    <option value="india">India</option>
+                </select>
+            </div>
+
+            <div style="margin-bottom: 15px;">
+                <label for="city">Select city which you want to visit:</label>
+                <select id="city" name="city" style="width: 100%; padding: 5px;">
+                    <option value="">--Please choose a city--</option>
+                    <option value="newyork">New York</option>
+                    <option value="london">London</option>
+                    <option value="paris">Paris</option>
+                    <option value="barcelona">Barcelona</option>
+                    <option value="amsterdam">Amsterdam</option>
+                    <option value="tokyo">Tokyo</option>
+                </select>
+            </div>
+
+            <div style="margin-bottom: 15px;">
+                <label for="comments">Additional Comments:</label>
+                <textarea id="comments" name="comments" rows="4" cols="50" style="width: 100%; padding: 5px;"></textarea>
+            </div>
+
+            <div style="margin-bottom: 15px;">
+                <label for="browser">Choose your browser:</label>
+                <input list="browsers" id="browser" name="browser" style="width: 100%; padding: 5px;">
+                <datalist id="browsers">
+                    <option value="Chrome">
+                    <option value="Firefox">
+                    <option value="Safari">
+                    <option value="Edge">
+                    <option value="Opera">
+                </datalist>
+            </div>
+
+            <div>
+                <input type="submit" value="Submit Form" style="background-color: #6c63ff; color: white; border: none; padding: 10px 15px; border-radius: 5px; cursor: pointer;">
+            </div>
+        </fieldset>
+    </form>
+</body>
+</html>
